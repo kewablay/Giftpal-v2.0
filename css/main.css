@@ -290,7 +290,7 @@ nav a{
     margin-bottom: 1rem;
 }
 
-.explore-card-content card-desc{
+.explore-card-content .card-desc{
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
