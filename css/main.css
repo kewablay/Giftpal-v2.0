@@ -99,10 +99,13 @@ nav a{
     border-radius: 10px;
 }
 
+.my-button:hover{
+    box-shadow: 0px -4px 4px 0px #00000040;
+    color: white;
+}
+
 .get-started-btn:hover{
     background-color: #511ddf;
-    color: white;
-    box-shadow: 0px -4px 4px 0px #00000040;
 }
 
 .nav-item .active{
