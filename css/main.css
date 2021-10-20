@@ -10,6 +10,10 @@
     background-color:#2824D40A;
 }
 
+.bg--white{
+    background-color: white;
+}
+
 .brand img{
     width: 90px;
     height: 50px;
@@ -23,7 +27,7 @@ nav{
     justify-content: space-between;
 }
 
-a{text-decoration: none;}
+*a{text-decoration: none;}
 
 nav a{
     text-decoration: none;
@@ -69,7 +73,9 @@ nav a{
 
 /* ----main content header section---- */
 
-
+.main-content{
+    padding-bottom: 5rem;
+}
 .main-intro-text h3{
     font-size: 50px;
     line-height: 75px;
@@ -297,6 +303,79 @@ nav a{
     text-align: left;
 }
 
+/* ----end of explore cards */
+
+/* ---start of second section---- */
+.second-section{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section-intro h3{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 75px;
+    text-align: left;
+}
+
+.section-intro p{
+    width: 327px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* ----steps--- */
+.steppers{
+    position: absolute;
+}
+.steppers img{
+    height: 520px; 
+    margin-top: 2rem;
+}
+
+
+.step{
+    height: 93px;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.step:nth-child(1){
+    background: #C9E13621;
+}
+.step:nth-child(2){
+    background: #36E1B830;
+}
+.step:nth-child(3){
+    background: #7527C31A;
+}
+.step:nth-child(4){
+    background: #53867A1A;
+}
+.step:nth-child(5){
+    background: #FF8A651A;
+}
+
+.step img{
+    height: 32px;
+    width: 32px;
+}
+
 
 
 
@@ -311,6 +390,17 @@ nav a{
         justify-content: center;
         align-items: center;
     }
+
+    .second-section .section-intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .second-section .intro-desc{
+        width: 307px;
+    }
+    
 
     .main-intro-text h3{
         width: 100%;
@@ -367,6 +457,10 @@ nav a{
         font-size: 20px;
         margin-bottom: 1rem;
     }   
+
+    .explore-card .my-button{
+        font-size: 20px;
+    }
 
     
 
