@@ -376,9 +376,69 @@ nav a{
     width: 32px;
 }
 
+/* ----end of steps */
 
 
+/* ----start of third section */
+.third-section{
+    padding-top: 4rem;
+    padding-bottom: 6.8rem;
+}
 
+.section-title{
+    margin-bottom: 5rem;
+}
+
+/* ---testimonials section ---- */
+.testimonial-card{
+    height: 154px;
+    /* width: 351px; */
+    border-radius: 12px;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card #test-title p{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+.testimonial-card #test-title span{
+    margin-right: 1rem;
+}
+
+
+#testimony{
+    width:265px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+}
+
+/* -----footer section---- */
+
+footer{
+    margin-top: 9.5rem;
+}
+.footer-logo{
+    margin-top: 1rem;
+}
+
+.footer-text-header{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.footer-text{
+    font-weight: 300;
+    font-size: 1.56em;
+    line-height: 38px;
+}
 
 
 
@@ -435,11 +495,7 @@ nav a{
     display:none;
 }
 
-#gift-card-row{
-    justify-content: center;
-}
-
-#card-row{
+.md-center{
     justify-content: center;
 }
 
