@@ -32,6 +32,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #5027C3;
+    padding: .5rem;
 }
 
 .nav-item-list{
@@ -42,28 +43,29 @@ nav a{
     display: none;
     position: absolute;
     top: 3.2rem;
-    background: #68687e81;
-    border-radius: 5px;
-    padding-bottom: .5rem;
+    background: white;
+    padding: .2rem .2rem;
 }
-
-.dropdown-content a{
-    color:#5127c3bd;
+.dropdown-content a:first-child{
+    display: none;
+}
+.dropdown-content a{ 
     display: block;
-    padding: .3rem 1rem;
-    border-bottom: 1px solid #5127c32d;
+    padding: .5rem 1rem; 
 }
 
-.dropdown-content a:last-child, .dropdown-content a:first-child{
-    border-bottom: none;
+.dropdown-content a:hover{
+    background-color: whitesmoke;
 }
 
 .services:hover .dropdown-content {
     display: block;
 }
 
-.nav-link:hover a{
-    border-bottom: 1px solid #5127c3bd;
+.nav-link:hover .link{
+    background:#5D43A7;
+    color: white;
+    border-radius: 25px;
 }
 
 .nav-toggler{
@@ -419,11 +421,15 @@ nav a{
     text-align: left;
 }
 
+.third-section .row{
+    margin-bottom: 7rem;
+}
 /* -----footer section---- */
 
 footer{
     margin-top: 9.5rem;
 }
+
 .footer-logo{
     margin-top: 1rem;
 }
@@ -435,10 +441,13 @@ footer{
 }
 
 .footer-text{
+    font-size: 25px;
     font-weight: 300;
-    font-size: 1.56em;
     line-height: 38px;
+    text-align: left;  
+    margin-top: 2.6rem;
 }
+
 
 
 
@@ -460,7 +469,6 @@ footer{
     .second-section .intro-desc{
         width: 307px;
     }
-    
 
     .main-intro-text h3{
         width: 100%;
@@ -475,6 +483,11 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /* third section */
+    .section-title{
+        text-align: center;
     }
 }
 
