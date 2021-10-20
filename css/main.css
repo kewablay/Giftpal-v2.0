@@ -42,7 +42,7 @@ nav a{
 .dropdown-content{
     display: none;
     position: absolute;
-    top: 3.2rem;
+    top: 2.5rem;
     background: white;
     padding: .2rem .2rem;
 }
@@ -128,6 +128,7 @@ nav a{
 
 .card-col .gift-card{
     background: #36E1B830;
+    border-radius: 11px;
 }
 
 /* ---first card item---- */
