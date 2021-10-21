@@ -28,15 +28,19 @@ body{
 }
 
 .title{
-font-size: 50px;
-font-weight: 700;
-text-align: center;
-color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.desc{
+    margin-top: 1.5rem;
 }
 
 .desc p{
     font-size: 23px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 35px;
     letter-spacing: 0em;
     text-align: center;
@@ -59,11 +63,11 @@ color: white;
 .signup-form h4{
     margin-bottom: 5.4rem;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 300;
 }
 #or{
     font-size: 30px;
-    font-weight: 400
+    font-weight: 300
 }
 
 .form-group{
@@ -92,7 +96,7 @@ color: white;
 .card input::placeholder{
     color: #A6A8AB;
     font-size: 23px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .card input, .card button,.link{
@@ -109,5 +113,68 @@ color: white;
     background: #5D43A7 !important;
     color: white;
     font-size: 30px;
-    font-weight: 400px;
+    font-weight: 200;
 }
+
+.card button:hover{
+    color: white;
+    background: rgba(180, 180, 180, 0.973) !important;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.411);
+}
+
+
+/* ------media queries------ */
+@media (min-width: 991.98px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ }
+
+
+ @media (max-width: 991.98px) { 
+     .main-content{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+     }
+     .title{
+        font-size:40px;
+    }
+    .desc p{
+        font-size: 20px;
+        width: 400px;
+    }
+    .signup-form h4{
+        font-size:25px;
+    }
+    #google-link{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .card input::placeholder{
+        font-size: 20px;
+    }
+    .card button{
+        font-size: 25px;
+    }
+
+ }
+
+ @media (max-width: 767.98px) { 
+    .card{
+        padding: 2rem 5rem;
+    }
+    .desc p{
+        padding: 2rem 3rem;
+    }
+ }
+
+ @media (max-width: 575.98px) {
+    .card{
+        padding: 2rem 3rem;
+        /* width: 250px; */
+    }
+ }
