@@ -39,13 +39,19 @@ body{
 .desc{
     width: 22.7rem;
 }
+.desc h4{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
 .desc p{
     font-size: 20px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-
+    
 }
 
 .btn-group{
@@ -82,75 +88,111 @@ body{
 
 
 /* ----payment section ---- */
-.card{
+#main-card{
     background: #36E1B80F !important;
 }
-.card{
-    padding: 2rem 7rem;
+#main-card{
+    padding: 2rem 2rem;
     height:659px;
     border-radius: 13px !important;
     color: #A6A8AB;
 }
 
-.signup-form h4{
-    margin-bottom: 5.4rem;
-    font-size: 30px;
-    font-weight: 300;
-}
-#or{
-    font-size: 30px;
-    font-weight: 300
-}
-
 .form-group{
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
-#google-link{
-    text-decoration: none;
-    color: #A6A8AB;
-    font-size: 23px;
-    font-weight: 300;
-}
-
-.link{
-    background: #5D43A70A;
+.input-grp{
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+#name{
+    margin-right: .3rem;
+}
+
+.form-group label{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .card input{
-    text-align: center;
     padding: 0 1rem;
-    background: #5D43A70A;
+    height: 2.25rem;
+    font-size: 11px;
+    font-weight: 300;
+    /* width: 9.8rem; */
+    border-radius: 6px;
+
 }
-.card input::placeholder{
-    color: #A6A8AB;
-    font-size: 23px;
-    font-weight: 200;
+.card input::placeholder, textarea::placeholder{
+    color: #00000044 !important;
+    font-size: 11px !important;
+    font-weight: 300 !important;
+    letter-spacing: 0em;
+    text-align: left;
+}
+textarea{
+    resize: none !important;
+ 
+}
+/* --summary section-- */
+.summary{
+    color: #00000080;
 }
 
-.card input, .card button,.link{
-    height: 3.75rem;
-    width: 100%;
-    border-radius: 13px;
+.summary-card{
+    height: 90%;
+    padding: 1.5rem;
 }
 
-.card span{
-    margin-right: 1rem;
+.summary h3{
+font-size: 15px;
+font-weight: 400;
 }
 
-.card button{
-    background: #5D43A7 !important;
+.summary h4{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.summary p{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.card-item{
+    width:100%;
+    padding: .2rem;
+    border-radius: 4px;
+    text-justify: center;
+}
+
+.card-item:nth-child(3){
+    background: #36E1B814;
+    margin-bottom: 1rem;
+}
+.card-item:nth-child(4){
+    background: #C9E13614;
+}
+button{
+    background: #36E1B8 !important;
+}
+.summary-card a{
+    text-decoration: none;
     color: white;
-    font-size: 30px;
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 15px;
+}
+.card-item span{
+    float: right;
 }
 
-.card button:hover{
-    color: white;
-    background: rgba(180, 180, 180, 0.973) !important;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.411);
+.other-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
-

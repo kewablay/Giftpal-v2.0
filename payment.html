@@ -42,26 +42,77 @@
             <!----- payment section---- -->
 
             <div class="col-12 col-md-12 col-lg-12 col-xl-7">
-                <div class="card">
-                    <form class="signup-form">
-                        <h4 class="text-center">Create an account</h4>
-                        <div class="form-group">
-                            <a id="google-link" href="#">
-                                <div class="link">
-                                     <span><img src="images/google.png" alt=""></span>
-                                     Sign Up with Google 
+                <div class="card" id="main-card">
+                    <form class="row payment-form">
+                        
+                        <div class="credentials col-7">
+                            <div class="row form-group">
+                                <div class="col-12">
+                                    <label for="name">Name</label>
                                 </div>
-                            </a>
+                                <div class="input-grp col-12 col-lg-12">
+                                    <input type="name" class="form-control" placeholder="First name" id="name" required="required">
+                                    <input type="name" class="form-control" placeholder="Last name" id="name" required="required">
+                                </div>
+                            </div>
+                            <!-- -- -->
+                            <div class="row g-1 form-group">
+                                <div class="col-6 col-lg-6">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" placeholder="Phone" id="phone" required="required"> 
+                                </div>
+                                <!-- ------ -->
+                                <div class="col-6 col-lg-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email" id="email" required="required"> 
+                                </div>
+                            </div>
+                            <!-- -- -->
+                            <div class="row form-group">
+                                <div class="col-12">
+                                    <label for="location">Location</label>
+                                </div>
+                                <div class="col-8 col-lg-8">
+                                    <input type="location" class="form-control" placeholder="Location" id="location" required="required">
+                                </div>
+                            </div>
+                            <!-- --- -->
+                            <div class="row form-group">
+                                <div class="col-12">
+                                    <label for="note">Complementary note</label>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <textarea class="form-control" id="note" rows="3" placeholder="Hi Anna, I knew you had a stressful week. Release of the stress with this"></textarea>
+                                </div>
+                            </div>
+                            <!-- --- -->
+                            
+                            <!-- ---- -->
+                            
                         </div>
-                        <div class="form-group text-center"><p id="or">or</p></div>
-                        <div class="form-group"> 
-                            <input type="email" class="form-control" placeholder="Email" required="required">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phone" required="required"> 
-                        </div>
-                        <div class="form-group text-center">
-                            <button type="submit" class="btn btn-blue btn-block">Sign Up</button> 
+                        <!-- ---summary section -->
+                        <div class="summary col-5"> 
+                            <h3>Order Summary</h3>
+                            <div class="card summary-card">
+                                <h4>2 Months house cleaning services</h4>
+                                <hr>
+                                <div class="card-item">
+                                    <p>To: <span>Ama Kofi</span></p>
+                                </div>
+                                <div class="card-item">
+                                    <p>From: <span>Nick Sam</span></p>
+                                </div>
+                                <hr>
+                                <div class="card-item">
+                                    <p id="total">Total <span>GHC250.00</span></p>
+                                </div class="card-item">
+                                <button class="btn btn-success" type="submit">Pay with Momo</button>
+                                <div class="other-options">
+                                    <span>Or</span>
+                                    <span><img src="images/Mastercard-Logo 1.png" alt=""></span>
+                                    <span><img src="images/visa-card.png" alt=""></span>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
