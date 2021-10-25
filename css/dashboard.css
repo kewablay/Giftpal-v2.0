@@ -296,9 +296,6 @@ form div{
     #side-bar.active{
         left: 0;
     }
-    .main-content{
-        /* background-color: pink; */
-    }
     .main-content-wrapper{
         width:100%;
     }
