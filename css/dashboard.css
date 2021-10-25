@@ -19,7 +19,7 @@ a{
     height: 100%;
     display: flex;
 }
-.side-bar{
+#side-bar{
     width: 25%;
     height: 100%;
     background: #5D43A7;
@@ -108,7 +108,7 @@ a{
     background: #5e43a7be;
     color: white;
 }
-.sidebar-toggle{
+#sidebar-toggle{
     display: none; 
 }
 #nav-toggle{
@@ -158,7 +158,7 @@ form div{
 }
 
 @media (max-width: 992px) {
-    .side-bar{
+    #side-bar{
         position: absolute;
         width: 300px;
         left:-300px;
@@ -168,7 +168,9 @@ form div{
     .sidebar-slider{
         display: block;
     }
-    .side-bar
+    #side-bar.active{
+        left: 0;
+    }
     .main-content{
         /* background-color: pink; */
     }
@@ -178,7 +180,7 @@ form div{
     .wrapper{
         width: 90%;
     }
-    .sidebar-toggle{
+    #sidebar-toggle{
         display: block; 
     }
     #close{
@@ -196,12 +198,17 @@ form div{
     #nav-toggle{
         display: block;
     }
+    
     .nav-items{
         display: none;
         position: absolute;
         top: 4.5rem;
-        width: 90%;
+        width: 100%;
+        padding-left: 0;
         z-index: 1000;
+    }
+    .nav-items.active{
+        display: block
     }
     .nav-items a{
         display: block;
