@@ -24,46 +24,10 @@ function hideSidebar(){
 }
 
 
-// nav bar toggle
+// nav bar toggle   
 
 navToggle.onclick = function() {
     navToggle.classList.toggle('active');
     nav.classList.toggle('active');
 }
 
-
-
-
-
-
-
-// // side bar toggle 
-
-
-
-// $('body').on('click', function(){
-//     if( parseInt(sidebar.css('left') ) > 0 ){
-//       hideSidebar();
-//     }
-//   });
-
-
-// navbar toggle 
-
-
-// navToggle.addEventListener('click', function() {
-//     nav.style.display = 'block';
-// })
-
-// function openNav() {
-//     nav.style.display = "block";
-// }
-// function closeNav() {
-//     nav.style.display = "none";
-// }
-
-// $('body').on('click', function(){
-//     if( parseInt( $('#mySidenav').css('width') ) > 0 ){
-//       closeNav();
-//     }
-//   });

@@ -135,7 +135,132 @@ form div{
     left: 5%;   
     
 }
-/* navbar ends */   
+/* navbar ends */  
+
+/* ---gift cards section */
+.title{
+    color: #5D43A7;
+    font-size: 35px;;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+.gift-cards{
+     display: flex;
+     gap: 2rem;
+     flex-wrap: wrap;
+
+}
+
+.gift-cards .card{
+    height: 162px;
+    flex: 0 1 278px;
+    border-radius: 16px;
+    padding: 1rem;     
+    transition: box-shadow .2s ease-out;
+}
+.gift-cards .card:hover{
+    box-shadow: 0px 5px 4px 1px rgba(0,0,0,0.25);
+}
+
+/* --card colors --- */
+.card:nth-child(1){
+    background: #FF3D00;
+}
+.card:nth-child(2){
+    background: #FFC107;
+}
+.card:nth-child(3){
+    background: #36E1B8;
+}
+/* end of card colors */
+
+.gift-cards .card h4{
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+.gift-cards .card p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+}
+
+#card-btn{
+    text-decoration: none;
+    background-color: white;
+    padding: 7px 10px;
+    width: 6rem;
+    font-size: 13px;
+    font-weight: 400;
+    color: #5D43A7; 
+    border-radius: 14px;
+}
+
+/* ---gift cards section ends */
+
+/*----browse section starts ---- */
+.browse{
+    font-size: 30px;
+}
+
+.services-container{
+    display: flex;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+}
+.browse-card .desc{
+    margin-top: 1rem;
+}
+.browse-card{
+    flex: 1 1 278px;
+}
+.browse-card img{
+    transition: transform .2s ease-out;
+}
+.browse-card:hover img{
+    transform: scale(1.04);
+}
+
+.service-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.desc p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.btn-group{
+    background: #36E1B852;
+    border-radius: 50px;
+    width: 14rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.btn-group a{
+    text-decoration: none;
+    color: #5D43A7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.price{
+    padding: .5rem 1rem;
+    background: #36E1B8;
+    border-radius: 50px;
+}
+
+.get-it{
+    padding: .5rem 1rem;
+}
+
+/*----browse section ends ---- */
 
 /* ---main content wrapper ends  ----  */
 
