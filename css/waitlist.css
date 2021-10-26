@@ -73,6 +73,7 @@ input{
 /* ----footer section starts  */
 footer{
     display: flex;
+    flex-wrap: wrap;
 }
 footer li{
     list-style-type: none;
