@@ -1,15 +1,15 @@
-// const navToggler = document.getElementsByClassName('nav-toggler')
-// const navMenu = document.getElementsByClassName('nav-item-list')
+var navToggle = document.getElementById('nav-toggler');
+var nav = document.getElementById('nav-item-list');
 
+navToggle.onclick = function(){
+    navToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+}
 
-// navToggler.addEventListener("click", () => {
-//     navToggler.classList.toggle('active');
-//     navMenu.classList.toggle('active');
+document.addEventListener("click", () => {
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+      navToggle.classList.remove("active");
+       }
+    }, true);
 
-//     if(navMenu.classList.contains("active")){
-//         navMenu.style.maxHeight = navMenu.scrollHeight + "px";
-//     }
-//     else{
-//         navMenu.removeAttribute("style");
-//     }
-// });
