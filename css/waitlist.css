@@ -11,14 +11,15 @@
 }
 
 .full-content-container{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper{
+/* .wrapper{
     padding-top: 6rem;
-}
+} */
 
 .main-container{
     display: flex;  
@@ -35,7 +36,7 @@
 .intro p{
     margin-top: 1rem;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 16px;
     color: #FFFFFF;
 
@@ -57,30 +58,31 @@ input{
     border-radius: 12px;
     color: white;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 2rem;
 }
 
 .credentials .row{
     margin-top: 2px;
 }
-
-/* ----form section start----  */
-
-/* ----form section ends ----  */
+.hero-image{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /* ----footer section starts  */
 footer{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 footer li{
     list-style-type: none;
-    margin-bottom: 3.3rem;
     margin-top: 1rem;   
     margin-right: 3.6rem;
 }
+
 footer a{
     text-decoration: none;
     color: white; 
@@ -90,7 +92,6 @@ footer a{
 
 footer a:hover{
     color: white;
-    transform:scale(1.05);
 }
 #ig{
     margin-right: .5rem;
@@ -103,8 +104,6 @@ footer a:hover{
 @media (max-width: 1200px) {
     .title h3{
         font-size: 40px;
-        font-weight: 700;
-        color: #21F9D2;
     }
     
     input{
@@ -118,8 +117,49 @@ footer a:hover{
     }
 }
 @media (max-width: 992px) {
-    .main-container{
-       justify-content: column-reverse;
+    .title h3{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    .intro p{
+        font-weight: 100;
+    }
+    #cta{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .hero-image{
+        justify-content: center;
+    }
+    footer{
+        justify-content: center; 
+        margin-bottom: 3rem;
+    }
+    footer li{
+        margin-bottom: 1rem;  
+    }
+}
+
+@media (max-width: 576px) { 
+    .title h3{
+        font-size: 34px;
+        font-weight: 500;
+        margin-top: 1rem;
+    }
+    .intro p{
+        font-weight: 100;
+        font-size: 13px;
+    }
+    input::placeholder{
+        font-size: 13px;
+    }
+    
+    footer a{
+        font-size: 14px;
+    }
+    footer li{
+        margin-bottom: 0;
     }
 }
 /* --- media queries ends  ---- */
