@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #5A12A3; */
 }
 
 body{
-    background: #2824D40A;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#E5E5E5 !important;
 }
 
 .main-content{
@@ -129,7 +132,6 @@ body{
     font-weight: 300;
     /* width: 9.8rem; */
     border-radius: 6px;
-
 }
 .card input::placeholder, textarea::placeholder{
     color: #00000044 !important;
@@ -140,6 +142,8 @@ body{
 }
 textarea{
     resize: none !important; 
+    font-size: 11px !important;
+    height: 86px !important;
 }
 
 .sign-up{
@@ -160,9 +164,10 @@ textarea{
     color: #00000080;
 }
 
-.summary-card{
+.summary .summary-card{
     height: 90%;
     padding: 1.5rem;
+    border-radius: 10px;
 }
 
 .summary h3{
@@ -219,12 +224,6 @@ button{
 
 /* ----media queries ---- */
 @media (min-width: 1199.98px) { 
-    body{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     #main-card{
         height:659px;
     }
