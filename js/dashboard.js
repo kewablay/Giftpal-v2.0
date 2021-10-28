@@ -44,11 +44,11 @@ const buttonRight = document.getElementById('button-right')
 
 
 buttonRight.onclick = function () {
-    document.getElementById('services-container').scrollLeft += 100;
+    document.getElementById('services-container').scrollLeft += 200;
 };
 
 buttonLeft.onclick = function () {
-document.getElementById('services-container').scrollLeft -= 100;
+document.getElementById('services-container').scrollLeft -= 200;
 };
 
 

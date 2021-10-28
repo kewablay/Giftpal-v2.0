@@ -224,6 +224,7 @@ form div{
 
 .browse{
     font-size: 30px;
+    color: #5D43A7;
 }
 
 .services-container::-webkit-scrollbar {
@@ -235,6 +236,7 @@ form div{
     gap: 2rem;
     /* flex-wrap: wrap; */
     overflow-x: scroll;
+    scroll-behavior: smooth;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
 }
@@ -299,6 +301,12 @@ form div{
 
 
 /* ---media queries ---- */
+@media (max-width: 1200px) {
+    .gift-cards .card{
+        padding: .7rem;     
+    }
+}
+
 @media (max-width: 1190px) {
     .nav-items a{
         font-size: 18px;
@@ -384,11 +392,32 @@ form div{
         flex-wrap: wrap;
     }
 }
-
-
-
-@media (max-width: 1200px) {
-    .gift-cards .card{
-        padding: .7rem;     
+@media (max-width: 652px) {
+    .gift-cards{
+        justify-content: center;
+    }
+    .gifts h3{
+        text-align: center;
     }
 }
+
+@media (max-width: 302px){
+    #nav-toggle{
+        position: absolute; 
+        top: 10%;
+        right: 0%;
+    }
+}
+
+@media (min-width: 653px) {
+    .gift-cards{
+        flex-wrap: nowrap !important;
+    }
+}
+
+
+    position: absolute; 
+    top: 10%;
+    right: 0%;
+
+
