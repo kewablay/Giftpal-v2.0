@@ -4,14 +4,6 @@ var nav = document.getElementById('nav-items');
 var navToggle = document.getElementById('nav-toggle');
 
 
-// document.onclick = function(c){
-//     if (c.target.id !== 'side-bar' && c.target.id !== 'sidebar-toggle'){
-//         sidebarToggle.classList.remove('active');
-//         sidebar.classList.remove('active');
-//     }
-// }
-
-
 // side bar toggle 
 sidebarToggle.onclick = function() {
     sidebarToggle.classList.toggle('active');
@@ -22,6 +14,12 @@ function hideSidebar(){
     sidebarToggle.classList.remove('active');
     sidebar.classList.remove('active');
 }
+document.addEventListener("click", () => {
+    if (sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+      sidebarToggle.classList.remove("active");
+       }
+    }, true);
 
 
 // nav bar toggle   
@@ -30,4 +28,28 @@ navToggle.onclick = function() {
     navToggle.classList.toggle('active');
     nav.classList.toggle('active');
 }
+
+document.addEventListener("click", () => {
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+      navToggle.classList.remove("active");
+       }
+    }, true);
+
+
+// browse items scroll
+
+const buttonLeft = document.getElementById('button-left')
+const buttonRight = document.getElementById('button-right')
+
+
+buttonRight.onclick = function () {
+    document.getElementById('services-container').scrollLeft += 100;
+};
+
+buttonLeft.onclick = function () {
+document.getElementById('services-container').scrollLeft -= 100;
+};
+
+
 

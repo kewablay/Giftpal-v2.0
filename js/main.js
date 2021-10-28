@@ -13,3 +13,14 @@ document.addEventListener("click", () => {
        }
     }, true);
 
+
+
+// news letter form submission 
+    
+var newsLetterForm = document.getElementById('myform');
+var submit = document.getElementById('go');
+console.log(submit)
+
+submit.onclick = function(){
+    document.forms["myform"].submit(); return false;
+}

@@ -24,7 +24,7 @@ a{
     width: 25%;
     min-height: 100%;
     /* background: #5D43A7; */
-    background: url('/Giftpal\ v2.0/images/side-bg.png') center/cover ;
+    background: url('../images/side-bg.png') center/cover ;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 }
@@ -208,17 +208,38 @@ form div{
 /* ---gift cards section ends */
 
 /*----browse section starts ---- */
+#browse-section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+
+}
+
+#browse-section-title button{
+    border-radius: 12px;
+    border: 1px solid rgba(245, 245, 245, 0.432);
+}
+
 .browse{
     font-size: 30px;
-    margin-top: 3rem;
 }
+
+.services-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .services-container{
     display: flex;
     gap: 2rem;
     /* flex-wrap: wrap; */
-    overflow-x: auto;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
 }
+
+
 .browse-card .desc{
     margin-top: 1rem;
 }
