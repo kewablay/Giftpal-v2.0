@@ -19,8 +19,25 @@ document.addEventListener("click", () => {
     
 var newsLetterForm = document.getElementById('myform');
 var submit = document.getElementById('go');
-console.log(submit)
 
 submit.onclick = function(){
     document.forms["myform"].submit(); return false;
 }
+
+
+// gift card scroll 
+
+const buttonLeft = document.getElementById('button-left');
+const buttonRight = document.getElementById('button-right');
+console.log(buttonLeft);
+console.log(buttonRight);
+
+
+buttonRight.onclick = function () {
+    console.log('clicked')
+    document.getElementById('home-row').scrollRight += 200;
+};
+
+buttonLeft.onclick = function () {
+    document.getElementById('home-row').scrollLeft -= 200;
+};

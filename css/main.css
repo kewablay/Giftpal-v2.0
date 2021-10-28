@@ -1,4 +1,9 @@
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
 .bg--gray{
     background: url('../images/grey-bg.png') center ;
 }
@@ -111,6 +116,21 @@ nav a{
     background-color: #511ddf;
 }
 
+
+/*---nav pill --- */
+#pills-tab{
+    position: relative;
+}
+
+#scroll-btns{
+    position: absolute; 
+    right: 0;
+}
+
+#scroll-btns button{
+    border-radius: 12px;
+    border: 1px solid rgba(245, 245, 245, 0.432);
+}
 .nav-item .active{
     background-color:#36E1B830 !important;
     color: #5027C3 !important;
@@ -160,8 +180,14 @@ nav a{
 }
 
 
-
-
+.card-row::-webkit-scrollbar {
+    display: none;
+  }
+.card-row{
+    overflow-x: scroll; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
 .gift-card{
     /* width: 21.6rem; */
     height: 33.5rem;
@@ -427,6 +453,10 @@ footer{
     border-radius: 12px;
     padding: 2rem;
 }
+footer a{
+    text-decoration: none;
+    color:#5D43A76B;
+}
 
 .footer-logo{
     margin-top: 1rem;
@@ -445,7 +475,6 @@ footer{
 .footer-text{
     font-size: 15px;
     font-weight: 300;
-    color:#5D43A76B;
     margin-top: 2.6rem;
 }
 
@@ -511,6 +540,12 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    /* --gift card scroll ---- */
+    #scroll-btns{
+        position: static; 
+        /* right: 0 */
+    }
+    
 
     /* third section */
     .section-title{

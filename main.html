@@ -36,8 +36,8 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-link"><a class='link' href="#">Partners</a></li>
-                <li class="nav-link"><a class='link' href="#">How it works</a></li>
+                <li class="nav-link"><a class='link' href="#partners">Partners</a></li>
+                <li class="nav-link"><a class='link' href="#how-it-works">How it works</a></li>
             </ul>
         </nav>
         <!-- ----------- -->
@@ -73,11 +73,20 @@
                     <li class="nav-item">
                       <a class="nav-link rounded-pill" id="pills-home-service-tab" data-toggle="pill" href="#pills-home-service" role="tab" aria-controls="pills-home-service" aria-selected="false">Home service</a>
                     </li>
+                    <span id="scroll-btns">
+                        <button id="button-left">
+                            <img src="images/back-button.png" alt="">
+                        </button>
+                        <button id="button-right">
+                            <img src="images/right.png" alt="">
+                        </button>
+                    </span>
+
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <!-- --- card items --- -->
-                        <div class="row card-row md-center">
+                        <div class="row flex-nowrap card-row" id="home-row">
                             <div class="card-col col-10 col-md-6 col-lg-4 pb-5">
                                 <div class="card gift-card container">
                                     <img src="images/card-img.jpg" alt="">
@@ -206,7 +215,7 @@
 
                 <!-- ---explore cards---- -->
                 <div class="explore-cards">
-                    <div class="row card-row md-center">
+                    <div class="row card-row">
                         <div class="card-col col-10 col-md-6 col-lg-4">
                             <div class="explore-item-container">
                                 <div class="explore-card container">
@@ -282,7 +291,7 @@
     <!-- ----end of first section---- -->
 
     <!-- ----second section------- -->
-    <section class="second-section bg--white">
+    <section class="second-section bg--white" id='how-it-works'>
         <div class="container">
             <div class="row">
                 <div class="section-intro col-12 col-md-12 col-lg-6">
@@ -335,7 +344,7 @@
             </h3>
 
             <!-- ----testimonials section----- -->
-            <div class="row md-center">
+            <div class="row">
                 <div class="col-10 col-md-6 col-lg-4 pb-5">
                     <div class="testimonial-card">
                         <div class="content">
@@ -405,27 +414,28 @@
             </div>
             <!-- end of testimonial section---- -->
 
+            <h3 class="section-title" id='partners'>Our Partners</h3>
             <footer class="row bg-white"> 
                 <div class="footer-logo col-12 col-md-3 col-lg-2 pb-5 " id="footer-item">
                      <img src="images/giftpal-logo.png" alt="">
                 </div>
                 <div class="col-12 col-md-3 col-lg-2 pb-5" id="footer-item">
                     <h3 class="footer-text-header">About Us</h3>
-                    <h3 class="footer-text">Company</h3>
-                    <h3 class="footer-text">What we do</h3>
+                    <h3 class="footer-text"><a href="#">Company</a> </h3>
+                    <h3 class="footer-text"><a href="#">What we do</a> </h3>
                 </div>
  
                 <div class="col-12 col-md-3 col-lg-2 pb-5" id="footer-item">
                     <h3 class="footer-text-header">Services</h3>
-                    <h3 class="footer-text">Peer to peer Gifting</h3>
-                    <h3 class="footer-text">Group Gifting</h3>
-                    <h3 class="footer-text">Corporate Gifting</h3>
+                    <h3 class="footer-text"><a href="#">Peer to peer Gifting</a> </h3>
+                    <h3 class="footer-text"><a href="#">Group Gifting</a> </h3>
+                    <h3 class="footer-text"><a href="#">Corporate Gifting</a> </h3>
                 </div>
                 <div class="col-12 col-md-3 col-lg-2 pb-5" id="footer-item">
                     <h3 class="footer-text-header">Follow Us</h3>
-                    <h3 class="footer-text">Facebook</h3>
-                    <h3 class="footer-text">Instagram</h3>
-                    <h3 class="footer-text">Twitter</h3>
+                    <h3 class="footer-text"><a href="#">Facebook</a> </h3>
+                    <h3 class="footer-text"><a href="#">Instagram</a> </h3>
+                    <h3 class="footer-text"><a href="#">Twitter</a> </h3>
                 </div>
 
                 <div class="col-12 col-md-5 col-lg-4 pb-5" id="footer-item">
