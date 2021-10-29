@@ -180,6 +180,7 @@ nav a{
 }
 
 
+/* -----gift card scroll ----- */
 .card-row::-webkit-scrollbar {
     display: none;
   }
@@ -187,7 +188,11 @@ nav a{
     overflow-x: scroll; 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
+/* ---gift card scroll ends */
+
+
 .gift-card{
     /* width: 21.6rem; */
     height: 33.5rem;

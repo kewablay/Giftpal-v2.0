@@ -33,11 +33,23 @@ console.log(buttonLeft);
 console.log(buttonRight);
 
 
+
+
 buttonRight.onclick = function () {
-    console.log('clicked')
-    document.getElementById('home-row').scrollRight += 200;
+    document.getElementById('home-row').scrollLeft += 200;
 };
 
 buttonLeft.onclick = function () {
     document.getElementById('home-row').scrollLeft -= 200;
 };
+
+
+
+// buttonRight.onclick = function () {
+//     console.log('clicked')
+//     document.getElementsByClassName('card-row').scrollLeft += 200;
+// };
+
+// buttonLeft.onclick = function () {
+//     document.getElementsByClassName('card-row').scrollLeft -= 200;
+// };
