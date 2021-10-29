@@ -130,6 +130,11 @@ img{
     .nav-toggler{
         display: block;
     }
+    .brand img{
+        width: 120px;
+        height: 30px;
+    }
+   
 
     #nav-item-list{
         display: none;

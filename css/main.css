@@ -566,7 +566,10 @@ footer a{
     background-color:#2824D40A;
     /* background-color: blue; */
 }
-
+.brand img{
+    width: 150px;
+    height: 40px;
+}
 .nav-toggler{
     display: block;
 }
@@ -622,10 +625,6 @@ footer a{
     background-color: whitesmoke;
 }
 
-
-
-
-
 .md-center{
     justify-content: center;
 }
@@ -638,6 +637,11 @@ footer a{
 
 
 @media only screen and (max-width: 576px) {
+    .brand img{
+        width: 120px;
+        height: 30px;
+    }
+   
     .main-intro-text h3{
         font-size: 40px;
         line-height: 50px; 
