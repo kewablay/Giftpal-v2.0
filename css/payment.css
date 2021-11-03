@@ -265,3 +265,58 @@ button{
         width: 70%;
     }
 }
+
+@media (max-width: 375.98px) { 
+    .content img{
+        width: 90%;
+    }
+    .desc{
+        width: 90%;
+    }
+    .title{
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    
+    
+    .desc h4{
+        font-size: 23px;
+        font-weight: 300;
+    }
+    .desc p{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;        
+    }
+
+.btn-group{
+    background: #36E1B852;
+    border-radius: 50px;
+    width: 14.7rem;
+    margin: auto 1rem;
+    /* margin-bottom: 1rem; */
+    align-self: flex-start;
+}
+
+.btn-group a{
+    text-decoration: none;
+    color: #5D43A7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.price{
+    padding: 1rem 1.4rem;
+    background: #36E1B8;
+    border-radius: 50px;
+}
+
+.get-it{
+    padding: 1rem 1.4rem;
+}
+}

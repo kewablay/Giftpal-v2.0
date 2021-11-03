@@ -646,7 +646,7 @@ footer a{
         width: 120px;
         height: 30px;
     }
-   
+    
     .main-intro-text h3{
         font-size: 40px;
         line-height: 50px; 
@@ -658,10 +658,19 @@ footer a{
         margin-bottom: 1rem;
     }   
 
+    .explore .explore-intro-text{
+        margin: .5rem;
+    }
     .explore-card .my-button{
         font-size: 20px;
     }
 
+    
+
+}
+
+
+@media only screen and (max-width: 376px) {
     
 
 }
