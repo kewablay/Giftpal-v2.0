@@ -36,11 +36,22 @@ console.log(buttonRight);
 
 
 buttonRight.onclick = function () {
-    document.getElementById('home-row').scrollLeft += 200;
+    const tabPane = document.querySelectorAll('.tab-pane');
+    console.log(tabPane)
+    tabPane.forEach(function(tab){
+        if (tab.classList.contains){
+            console.log(tab.classList);
+        }
+    })
+
+    // document.getElementById('home-row').scrollLeft += 200;
 };
 
 buttonLeft.onclick = function () {
-    document.getElementById('home-row').scrollLeft -= 200;
+
+
+
+    // document.getElementById('home-row').scrollLeft -= 200;
 };
 
 

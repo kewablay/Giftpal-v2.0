@@ -633,6 +633,11 @@ footer a{
     align-items: flex-start;
 }
 
+.footer-logo img{
+    width: 170px;
+    height: 50px;
+}
+
 }
 
 
