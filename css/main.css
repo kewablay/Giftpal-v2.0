@@ -609,7 +609,7 @@ footer a{
     letter-spacing: 1px;
 }
 .dropdown-content{
-    display: none;
+    display: block;
     position: static;
     background: #E5E5E5;
     top: 0rem;
@@ -662,7 +662,7 @@ footer a{
         margin: .5rem;
     }
     .explore-card .my-button{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     
@@ -671,6 +671,33 @@ footer a{
 
 
 @media only screen and (max-width: 376px) {
+    .nav-item-list{
+        width: 94%;
+    }
+    .explore-card span{
+        margin-left: .5rem;
+    }
+    
+    .explore-card a{
+        padding: 0.5rem 1rem;
+        background: #FF3D00;
+        border-radius:25px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+
+    /* second section */
+    .section-intro h3{
+        font-size: 40px;
+    }
+    .section-intro p{
+        text-align: center;
+    }
+    .second-section .intro-desc {
+        width: 270px;
+    }
     
 
 }
+

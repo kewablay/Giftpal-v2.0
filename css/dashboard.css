@@ -405,11 +405,15 @@ form div{
     }
 }
 
-@media (max-width: 302px){
-    #nav-toggle{
-        position: absolute; 
-        top: 10%;
-        right: 0%;
+@media (max-width: 337px){
+    .gifts h3{
+        font-size: 30px;
+        margin-top: 4rem;
+    }
+    .navbar form{
+        position: absolute;
+        top: 100%;
+        margin: 1rem;
     }
 }
 
@@ -419,9 +423,5 @@ form div{
     }
 }
 
-
-    position: absolute; 
-    top: 10%;
-    right: 0%;
 
 

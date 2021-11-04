@@ -6,7 +6,7 @@ navToggle.onclick = function(){
     nav.classList.toggle('active');
 }
 
-document.addEventListener("click", () => {
+document.addEventListener("click", (e) => {
     if (nav.classList.contains("active")) {
       nav.classList.remove("active");
       navToggle.classList.remove("active");
