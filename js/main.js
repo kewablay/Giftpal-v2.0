@@ -34,33 +34,17 @@ console.log(buttonRight);
 
 
 
+buttonLeft.onclick = function () {
+    tabs = document.querySelector('.tab-content');
+    activeTab = tabs.querySelector(".active");
+    scrollRow = activeTab.firstElementChild;
+    scrollRow.scrollLeft -= 200;
+};
 
 buttonRight.onclick = function () {
-    const tabPane = document.querySelectorAll('.tab-pane');
-    console.log(tabPane)
-    tabPane.forEach(function(tab){
-        if (tab.classList.contains){
-            console.log(tab.classList);
-        }
-    })
-
-    // document.getElementById('home-row').scrollLeft += 200;
+    tabs = document.querySelector('.tab-content');
+    activeTab = tabs.querySelector(".active");
+    scrollRow = activeTab.firstElementChild;
+    scrollRow.scrollLeft += 200;
 };
 
-buttonLeft.onclick = function () {
-
-
-
-    // document.getElementById('home-row').scrollLeft -= 200;
-};
-
-
-
-// buttonRight.onclick = function () {
-//     console.log('clicked')
-//     document.getElementsByClassName('card-row').scrollLeft += 200;
-// };
-
-// buttonLeft.onclick = function () {
-//     document.getElementsByClassName('card-row').scrollLeft -= 200;
-// };
