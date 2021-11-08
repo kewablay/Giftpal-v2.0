@@ -18,43 +18,51 @@
 <body>
     <!-- ----start of first section----- -->
     <section class="landing-page first-section bg--gray">
-        <nav class="navbar container">
-            <div class="brand">
-                <a href="#"></a><img src="images/giftpal-logo1.png" alt=""></a>
-            </div>
-            <!-- ---- -->
-            <span class="nav-toggler" id="nav-toggler"><img src="images/menu.png" alt=""></span>
-            <!-- --------- -->
-            <ul class="nav-item-list" id="nav-item-list">
-                <li class="nav-link services">
-                    <a class='link' href="#">Services
-                            <span><img src="images/arrow-down.png" alt=""></span>
-                        <div class="dropdown-content">
-                            <a href="#">Peer to peer Gifting</a>
-                            <a href="#">Group Gifting</a>
-                            <a href="#">Corporate Gifting</a>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-link"><a class='link' href="#partners">Partners</a></li>
-                <li class="nav-link"><a class='link' href="#how-it-works">How it works</a></li>
-            </ul>
-        </nav>
-        <!-- ----------- -->
+        <div class="header  bg--yellow">
+            <nav class="navbar container">
+                <div class="brand">
+                    <a href="#"></a><img src="images/giftpal-logo1.png" alt=""></a>
+                </div>
+                <!-- ---- -->
+                <span class="nav-toggler" id="nav-toggler"><img src="images/menu.png" alt=""></span>
+                <!-- --------- -->
+                <ul class="nav-item-list" id="nav-item-list">
+                    <li class="nav-link services">
+                        <a class='link' href="#">Services
+                                <span><img src="images/arrow-down.png" alt=""></span>
+                            <div class="dropdown-content">
+                                <a href="#">Peer to peer Gifting</a>
+                                <a href="#">Group Gifting</a>
+                                <a href="#">Corporate Gifting</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-link"><a class='link' href="#partners">Partners</a></li>
+                    <li class="nav-link"><a class='link' href="#how-it-works">How it works</a></li>
+                </ul>
+            </nav>
+            <!-- -----navbar ends------ -->
 
-        <main class="main-content container">
-            <header class="main-header row pb-5 align-items-center">
-                <div class="main-intro-text col-md mb-5 col-lg-6">
+            <!-- header -->
+            <header class="main-header row align-items-center container">
+                <div class="main-intro-text col-6">
                     <h3>Giving shouldn't be occasional</h3>
                     <p>Make everyday an occassion</p>
                     <a class="my-button get-started-btn" href="register.html">Get started</a>
                 </div>
-
-                <div class="col-lg-6 hero-image">
-                    <img class="img-fluid" src="images/hero-img.png" alt="">
+    
+                <div class="col-6 hero-image">
+                    <picture>
+                        <source media="(max-width: 567px)" srcset="images/header-img.png">
+                        <img class="img" src="images/hero-img.png" alt="">
+                    </picture>
+                    
                 </div>
             </header>
+            <!-- --header ends--- -->
+        </div>
 
+        <main class="main-content container">
             <!-- -----gift categories ----- -->
             <div class="gift-category-tab">
                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
