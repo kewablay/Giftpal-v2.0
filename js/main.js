@@ -29,22 +29,35 @@ submit.onclick = function(){
 
 const buttonLeft = document.getElementById('button-left');
 const buttonRight = document.getElementById('button-right');
-console.log(buttonLeft);
-console.log(buttonRight);
+// console.log(buttonLeft);
+// console.log(buttonRight);
+// console.log(screen.width)
 
-
-
-buttonLeft.onclick = function () {
-    tabs = document.querySelector('.tab-content');
-    activeTab = tabs.querySelector(".active");
-    scrollRow = activeTab.firstElementChild;
-    scrollRow.scrollLeft -= 200;
-};
-
+if(screen.width <= 480){
+    buttonLeft.onclick = function () {
+    pillsTab = document.getElementById('pills-tab');
+    pillsTab.scrollLeft -= 200;
+}
 buttonRight.onclick = function () {
-    tabs = document.querySelector('.tab-content');
-    activeTab = tabs.querySelector(".active");
-    scrollRow = activeTab.firstElementChild;
-    scrollRow.scrollLeft += 200;
-};
+    pillsTab = document.getElementById('pills-tab');
+    pillsTab.scrollLeft += 200;
+}}
+
+else if(screen.width > 480){
+    buttonLeft.onclick = function () {
+        tabs = document.querySelector('.tab-content');
+        activeTab = tabs.querySelector(".active");
+        scrollRow = activeTab.firstElementChild;
+        scrollRow.scrollLeft -= 200;
+    };
+
+    buttonRight.onclick = function () {
+        tabs = document.querySelector('.tab-content');
+        activeTab = tabs.querySelector(".active");
+        scrollRow = activeTab.firstElementChild;
+        scrollRow.scrollLeft += 200;
+    }; 
+}
+
+
 
