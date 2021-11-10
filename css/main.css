@@ -223,7 +223,8 @@ nav a{
 }
 .gift-card .img-div{
     height: 55%;
-    border-radius: 20px;
+    border-radius: 6px;
+    overflow: hidden;
 
 }
 .gift-card img{
@@ -317,29 +318,44 @@ nav a{
     margin-bottom: 2.5rem;
 }
 
+.explore .inner{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.explore .img{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .explore-img{
     height: 100px;
     width: 100px;
-    margin-top: 3rem;
 }
-.explore-card span{
-    margin-left: 1rem;
-}
-
-.explore-card a{
-    padding: 0.7rem 3rem 0.7rem 3rem;
+.explore-card .my-button{
     background: #FF3D00;
     border-radius:25px;
+    padding: 3%;
+    margin-bottom: 0;
+}
+.explore-card a{
+    width: 100%;
     font-size: 30px;
     font-weight: 400;
     text-align: left;
     text-decoration: none;
-    color: white;
+    color: white;  
+    display: flex; 
+    justify-content: space-around;
 }
-
-.explore-card div{
-    margin-bottom: 1rem;
+.explore-card a:hover{
+    color: whitesmoke;
 }
 
 .explore-card-content .card-title{
@@ -666,8 +682,8 @@ footer a{
     /* ----header ends---- */
 
     /*--- gift categories-- */
-    .main-content {
-        /* width: 80%; */
+    .gift-category-tab{
+        padding-bottom: 1rem;
     }
 
     #pills-tab{
@@ -704,11 +720,11 @@ footer a{
     }
     .gift-card img{
         margin-top: 0;
-        border-radius: ;
     }
     .card-desc{
         font-size: 11px;
         line-height: 14.08px;
+        color:#5D43A7;
     }
     .btn-group{
         width: 80%;
@@ -730,6 +746,98 @@ footer a{
 
     /*--- gift categories ends-- */
 
+    /* --explore section--- */
+    .explore-intro-text{
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .explore-intro-text h3{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        /* margin-bottom: 0; */
+    }
+    .explore-intro-text p{
+        font-size: 5px;
+        font-weight: 300;
+        line-height: 8px;
+        text-align: center;
+        width: 10rem;
+        margin:auto;
+    }
+
+    .explore .card-row{
+        flex-wrap: nowrap;
+        overflow-x: scroll; 
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+    .explore-card{
+        height: 181px;
+        width: 168px;
+        margin-bottom: 1rem;
+    }
+
+    .explore-img{
+        height: 50px;
+        width: 47px;
+    }
+
+    .explore-card .my-button img{
+        border-radius: 50%;
+    }
+    .explore-card a{
+        font-size: 11px;
+    }
+
+    .explore-card-content .card-title{
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+
+    }
+
+    .explore-card-content .card-desc{
+        font-size: 6px;
+        font-weight: 300;
+        line-height: 9px;
+        text-align: center;
+    }
+        
+    /* --explore section ends--- */
+    
+/* 
+
+.explore-card .my-button{
+    background: #FF3D00;
+    border-radius:25px;
+    padding: 3%;
+    margin-bottom: 0;
+}
+.explore-card a{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    color: white;  
+    display: flex; 
+    justify-content: space-around;
+}
+
+.explore-card div{
+    margin-bottom: 1rem;
+}
+
+
+.explore-card-content .card-desc{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+} */
 }
 
 
