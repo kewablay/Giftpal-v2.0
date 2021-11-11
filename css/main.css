@@ -463,33 +463,48 @@ nav a{
 }
 
 /* ---testimonials section ---- */
+.third-section .test-row{
+    --bs-gutter-y: 1.5rem;
+}
+
 .testimonial-card{
     height: 154px;
-    /* width: 351px; */
+    width: 351px;
     border-radius: 12px;
     background: white;
-    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.testimonial-card .content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around   ;
 }
 
 .testimonial-card #test-title p{
     font-size: 30px;
     font-weight: 400;
     text-align: left;
+    margin-bottom: 0;   
+}
+.testimonial-card #test-title img{
+    width: 16%;
 }
 .testimonial-card #test-title span{
-    margin-right: 1rem;
+    margin-right: 5%;
 }
 
 
 #testimony{
-    width:265px;
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
     text-align: left;
+    color:#0000006E;
+    margin-bottom: 0;
 }
 
 .third-section .row{
@@ -853,6 +868,122 @@ footer a{
         margin-bottom: 0;
     }
     /*----how it works ends-----  */
+
+    /* ---testimonials section ---- */
+    .third-section{
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+    .third-section .section-title{
+        display: none;
+    }
+    .third-section .testimonials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background: #5D43A7;
+        border-radius: 8px;
+        margin: auto;
+        width: 89%;
+    }
+    .third-section .test-row{
+        width: 100%;
+        --bs-gutter-y: 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll; 
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    .third-section .test-row .col{
+        --bs-gutter-x: 0;
+        margin-right: 2%;
+    }
+    .testimonial-card{
+        height: 59px;
+        width: 140px;
+        border-radius: 8px;
+    }
+    .testimonial-card #test-title p{
+        font-size: 9px;
+        line-height: 13.5px;
+    }
+
+    #testimony{
+        font-size: 4px;
+        line-height: 6px;
+    }
+
+    /* ---partners--- */
+    #partners{
+        display: none;
+    }
+    /* ----footer section--- */
+    
+
+    /*     
+footer{
+    margin-top: 9.5rem;
+    border-radius: 12px;
+    padding: 2rem;
+}
+footer a{
+    text-decoration: none;
+    color:#5D43A76B;
+}
+
+.footer-logo{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-header{
+    font-size: 20px;
+    font-weight: 400;
+    color: #00000045;
+
+}
+
+.footer-text{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 2.6rem;
+}
+
+#newsletter{
+    height: 43px;
+    width: 272px;
+    border-radius: 41px;
+}
+
+.newsletter{
+    font-size: 15px ;
+    font-weight: 300;
+    color: #5D43A787;
+    margin-bottom: .5rem;
+}
+
+#newsletter-input{
+    position: relative;
+    width: 272px;
+}
+
+#go{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #00000045;
+    position: absolute; 
+    top:10%;
+    right: 10%;
+} */
+
+    /* ----footer section ends--- */
+/* -----testimonial section ends ------ */
 }
 
 
