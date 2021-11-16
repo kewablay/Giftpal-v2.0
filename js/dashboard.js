@@ -53,3 +53,6 @@ document.getElementById('services-container').scrollLeft -= 200;
 
 
 
+
+// $('.your-class').slick({
+//   });
