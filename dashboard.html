@@ -60,6 +60,9 @@
         <div class="main-content-wrapper" id="content-area">
             <div class="wrapper">
                 <nav class="navbar">
+                    <a href="#" id="main-logo">
+                        <img src="images/giftpal-logo1.png" alt="">
+                    </a>
                     <a href="#" id="sidebar-toggle">
                         <img src="images/side-icon.png" alt="">
                     </a>
@@ -86,27 +89,36 @@
 
                     <div class="gift-cards">
                         <div class="card">
-                            <div id="card-title"> 
-                                <h4>Airtime</h4>
+                            <div class="card-inner">
+                                <div id="card-title"> 
+                                    <h4>Airtime</h4>
+                                </div>
+                                <p >I was struggling to make my girl happy, thanks to Giftpal I cam now make that happen</p>
+                                <a href="#" id="card-btn">Buy Airtime</a>
+
                             </div>
-                            <p >I was struggling to make my girl happy, thanks to Giftpal I cam now make that happen</p>
-                            <a href="#" id="card-btn">Buy Airtime</a>
                         </div>
                         <!-- ----- -->
                         <div class="card">
-                            <div id="card-title"> 
-                                <h4>Mobile Data</h4>
+                            <div class="card-inner">
+                                <div id="card-title"> 
+                                    <h4>Mobile Data</h4>
+                                </div>
+                                <p >Top up your friends and family no matter where there are in the world.</p>
+                                <a href="#" id="card-btn">Buy Data</a>
                             </div>
-                            <p >Top up your friends and family no matter where there are in the world.</p>
-                            <a href="#" id="card-btn">Buy Data</a>
+
                         </div>
                         <!-- ----- -->
                         <div class="card">
-                            <div id="card-title"> 
-                                <h4>Bills</h4>
+                            <div class="card-inner">
+                                <div id="card-title"> 
+                                    <h4>Bills</h4>
+                                </div>
+                                <p >Pay Cable TV, Electricity and WiFi bills for your friends and family</p>
+                                <a href="#" id="card-btn">Pay Bills</a>
                             </div>
-                            <p >Pay Cable TV, Electricity and WiFi bills for your friends and family</p>
-                            <a href="#" id="card-btn">Pay Bills</a>
+
                         </div>
                         <!-- ----- -->
                     </div>
@@ -175,7 +187,6 @@
 
 
 
-    <script src="js/dashboard.js"></script>
 
     <!-----boostrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -184,24 +195,11 @@
 
     <!-- slick js import   -->   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
     "></script>
 				
-    <script>
-        if (screen.width <= 480){
-            console.log('its a small screen ')
-            $('.gift-cards').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-            });         
-          
-        }
-        
-    </script>
+
+    <script src="js/dashboard.js"></script>
 
 </body>
 </html>

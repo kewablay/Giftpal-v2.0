@@ -53,6 +53,14 @@ document.getElementById('services-container').scrollLeft -= 200;
 
 
 
-
-// $('.your-class').slick({
-//   });
+// slick intergration
+if (screen.width <= 480){
+    console.log('its a small screen ')
+    $('.gift-cards').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+    });         
+    
+}
