@@ -20,7 +20,8 @@ document.addEventListener("click", () => {
 var newsLetterForm = document.getElementById('myform');
 var submit = document.getElementById('go');
 
-submit.onclick = function(){
+submit.onclick = function(e){
+    e.preventDefault();
     document.forms["myform"].submit(); return false;
 }
 

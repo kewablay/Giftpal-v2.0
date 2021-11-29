@@ -38,7 +38,7 @@ nav{
 nav a{
     text-decoration: none;
     color: #5027C3;
-    padding: .5rem;
+    padding: .5rem .7rem;
 }
 
 .nav-item-list{
@@ -46,11 +46,13 @@ nav a{
 }
 
 .dropdown-content{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 3.1rem;
     background: white;
     padding: .2rem .2rem;
+    transition: opacity .5s ease-out;
 }
 .dropdown-content a:first-child{
     display: none;
@@ -65,7 +67,8 @@ nav a{
 }
 
 .services:hover .dropdown-content {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .nav-link:hover .link{
@@ -571,8 +574,58 @@ footer a{
     right: 10%;
 }
 
+@media (min-width:480px) and (max-width: 1241px){
+
+    .explore .card-row{
+        flex-wrap: nowrap;
+        overflow-x: scroll; 
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        gap: 3rem;
+    }
+}
+
 
 /* --------- media queries ------------- */
+@media (min-width:576px) and (max-width:992px){
+    .header .main-header {
+        justify-content: center;
+    }
+
+    .main-intro-text h3,.main-intro-text p{
+        width: 100%;
+        text-align: center;
+    }
+    .main-intro-text div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .hero-image{
+        width: 100%; 
+        height: 100%;
+        display: flex;
+        justify-content: center;    
+    }
+
+    @media (min-width: 768px){
+        .container{max-width: 850px !important;}   
+    }
+
+    .section-intro .get-started-btn{
+        margin-bottom: 2rem;
+    }
+
+    #footer-item #myform{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+
 @media only screen and (max-width: 768px) {
       
     
@@ -594,7 +647,7 @@ footer a{
         min-height: 20vh;
         z-index: 10000;
         width: 100%;
-        background: #5D43A7;
+        background: white;
         box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.377);
         display: flex; 
         flex-direction: column;
@@ -611,28 +664,30 @@ footer a{
         display: block;
         padding-left: 0rem; 
     }
-    .nav-item-list .link:hover{
-        background: rgba(38, 9, 77, 0.349) !important;
+    .nav-item-list .nav-link:hover .link{
+        background: rgba(184, 183, 185, 0.349) !important;
         border-radius: 0;
+        color: black !important;
     }
     
     .nav-item-list a{
         display: block;
-        color: white;
+        color: black;
         padding-left: 1rem;
         letter-spacing: 1px;
     }
     .dropdown-content{
-        display: block;
+        opacity: 1;
+        visibility: visible !important;
         position: static;
-        background: #E5E5E5;
+        background: whitesmoke;
         top: 0rem;
         padding: .2rem .2rem;
     }
     .dropdown-content a{ 
         display: block;
         padding: .5rem 1rem; 
-        color: #5027C3;
+        color: black;
     }
     
     .dropdown-content a:hover{
@@ -657,7 +712,7 @@ footer a{
     
     }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
     /* ----header---- */
     /* .bg--gray{
         background: white;
@@ -712,7 +767,6 @@ footer a{
     }
 
     #pills-tab{
-        font-size: 0.43;
         line-height: 0.65rem;
         width: 70%;
         flex-wrap: nowrap;
@@ -720,6 +774,7 @@ footer a{
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;
         scroll-behavior: smooth;
+        font-size: .43rem;
     }
 
     .nav-item{
@@ -742,6 +797,9 @@ footer a{
     }
     #card-inner{
         width: 70%;
+    }
+    .gift-card .img-div{
+        border-radius: .5rem;
     }
     .gift-card img{
         margin-top: 0;
