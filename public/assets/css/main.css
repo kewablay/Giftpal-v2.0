@@ -1,6 +1,5 @@
 *{
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -84,14 +83,15 @@ nav a{
 /* ---navbar ends---- */
     .header .main-header{
         padding-left: var(--bs-gutter-x,.75rem);
-        width: 100%;
+        width: 100% !important;
     }
 
 /* ----main content header section---- */
 
 .main-content{
-    padding-bottom: 5rem;
-}
+     padding-bottom: 5rem;
+ }
+
 .main-intro-text h3{
     font-size: 3.125rem;
     line-height: 4.68rem;
@@ -582,7 +582,7 @@ footer a{
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;
         scroll-behavior: smooth;
-        gap: 3rem;
+        /*gap: 3rem;*/
     }
 }
 
@@ -717,31 +717,32 @@ footer a{
     /* .bg--gray{
         background: white;
     } */
-
-    .bg--yellow{
-        background: url('../images/grey-bg.png') center#FFC107;
+    .bg--yellow {
+        background: url('../images/grey-bg.png') center #FFC107;
     }
 
-    nav{
+    nav {
         padding-top: 2rem;
         margin-bottom: 1rem;
     }
-    .brand img{
+
+    .brand img {
         width: 4.37rem;
         height: 1.25rem;
     }
-    .landing-page .main-content{
+
+    .landing-page .main-content {
         padding-bottom: 0;
     }
-    
-    .main-intro-text h3{
+
+    .main-intro-text h3 {
         font-size: 5vw;
-        line-height: 7vw; 
+        line-height: 7vw;
         margin-bottom: 2%;
         width: 100%;
     }
 
-    .main-intro-text p{
+    .main-intro-text p {
         font-size: 2.5vw;
         font-weight: 400;
         line-height: 4vw;
@@ -749,135 +750,149 @@ footer a{
         margin-bottom: 2.5%;
         width: 80%;
     }
-    .get-started-btn{
+
+    .get-started-btn {
         font-size: 0.625rem;
         font-weight: 400;
         line-height: 0.93rem;
         border-radius: 0.25rem;
     }
-    .hero-image .img{
+
+    .hero-image .img {
         width: 130%;
         height: 100%;
-    } 
-    /* ----header ends---- */
+    }
 
+    /* ----header ends---- */
     /*--- gift categories-- */
-    .gift-category-tab{
+    .gift-category-tab {
         padding-bottom: 1rem;
     }
 
-    #pills-tab{
+    #pills-tab {
         line-height: 0.65rem;
         width: 70%;
         flex-wrap: nowrap;
-        overflow-x: scroll; 
-        -ms-overflow-style: none;  /* IE and Edge */
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none;
         scroll-behavior: smooth;
         font-size: .43rem;
     }
 
-    .nav-item{
+    .nav-item {
         flex-shrink: 0;
     }
-   #scroll-btns img{
+
+    #scroll-btns img {
         width: 100%;
         height: 100%;
         top: .5%;
     }
-    #button-left, #button-right{
+
+    #button-left, #button-right {
         width: 2rem;
         height: 1.5rem
     }
 
-    .gift-card{
+    .gift-card {
         width: 10.3rem;
         height: 13rem;
         border-radius: 0.37rem;
     }
-    #card-inner{
+
+    #card-inner {
         width: 70%;
     }
-    .gift-card .img-div{
+
+    .gift-card .img-div {
         border-radius: .5rem;
     }
-    .gift-card img{
+
+    .gift-card img {
         margin-top: 0;
     }
-    .card-desc{
+
+    .card-desc {
         font-size: 0.68rem;
         line-height: 0.88rem;
-        color:#5D43A7;
+        color: #5D43A7;
     }
-    .btn-group{
+
+    .btn-group {
         width: 80%;
     }
 
-    .btn-group a{
+    .btn-group a {
         font-size: 0.43rem;
         line-height: 0.65rem;
     }
-    .price{
+
+    .price {
         padding: 5% 7%;
         border-radius: 0.81rem;
     }
-    
-    .get-it{
+
+    .get-it {
         padding: 5% 7%;
     }
-    
+
 
     /*--- gift categories ends-- */
-
     /* --explore section--- */
-    .explore{
+    .explore {
         margin-bottom: 0;
     }
-    .explore-intro-text{
+
+    .explore-intro-text {
         justify-content: center;
         margin-bottom: 1rem;
     }
-    .explore-intro-text h3{
+
+    .explore-intro-text h3 {
         font-size: 0.87rem;
         line-height: 1.3rem;
         text-align: center;
         /* margin-bottom: 0; */
     }
-    .explore-intro-text p{
+
+    .explore-intro-text p {
         font-size: 0.3rem;
         font-weight: 300;
         line-height: 0.5rem;
         text-align: center;
         width: 10rem;
-        margin:auto;
+        margin: auto;
     }
 
-    .explore .card-row{
+    .explore .card-row {
         flex-wrap: nowrap;
-        overflow-x: scroll; 
-        -ms-overflow-style: none;  /* IE and Edge */
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none;
         scroll-behavior: smooth;
     }
-    .explore-card{
+
+    .explore-card {
         height: 11.3rem;
         width: 10.5rem;
         margin-bottom: 1rem;
     }
 
-    .explore-img{
+    .explore-img {
         height: 50px;
         width: 47px;
     }
 
-    .explore-card .my-button img{
+    .explore-card .my-button img {
         border-radius: 50%;
     }
-    .explore-card a{
+
+    .explore-card a {
         font-size: 0.68rem;
     }
 
-    .explore-card-content .card-title{
+    .explore-card-content .card-title {
         font-size: 0.68rem;
         font-weight: 400;
         line-height: 1.06rem;
@@ -885,32 +900,31 @@ footer a{
 
     }
 
-    .explore-card-content .card-desc{
+    .explore-card-content .card-desc {
         font-size: 0.37rem;
         font-weight: 300;
         line-height: 0.56rem;
         text-align: center;
     }
-        
-    /* --explore section ends--- */
-    
-    /*----how it works-----  */
 
-    .second-section .steps-lg{
+    /* --explore section ends--- */
+    /*----how it works-----  */
+    .second-section .steps-lg {
         display: none;
     }
-    .second-section{
+
+    .second-section {
         padding: 2rem;
     }
 
-    .second-section .steps-mobile-col{
-        display: flex;   
+    .second-section .steps-mobile-col {
+        display: flex;
         background: #A6A8AB0A;
         border-radius: 0.68rem;
     }
 
-    .step-item{
-        display:flex;
+    .step-item {
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -918,7 +932,7 @@ footer a{
         height: 4.4rem;
     }
 
-    .step-item p{
+    .step-item p {
         font-size: 0.43rem;
         line-height: 0.65rem;
         color: #5D43A7;
@@ -926,17 +940,19 @@ footer a{
         text-align: center;
         margin-bottom: 0;
     }
-    /*----how it works ends-----  */
 
+    /*----how it works ends-----  */
     /* ---testimonials section ---- */
-    .third-section{
+    .third-section {
         padding-top: .5rem;
         padding-bottom: 2rem;
     }
-    .third-section .section-title{
+
+    .third-section .section-title {
         display: none;
     }
-    .third-section .testimonials{
+
+    .third-section .testimonials {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -946,115 +962,96 @@ footer a{
         margin: auto;
         width: 89%;
     }
-    .third-section .test-row{
+
+    .third-section .test-row {
         width: 100%;
         --bs-gutter-y: 0;
         flex-wrap: nowrap;
-        overflow-x: scroll; 
-        -ms-overflow-style: none;  /* IE and Edge */
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none;
         scroll-behavior: smooth;
     }
 
-    .third-section .test-row .col{
+    .third-section .test-row .col {
         --bs-gutter-x: 0;
         margin-right: 2%;
     }
-    .testimonial-card{
+
+    .testimonial-card {
         height: 3.68rem;
         width: 8.75rem;
         border-radius: 0.5rem;
     }
-    .testimonial-card #test-title p{
+
+    .testimonial-card #test-title p {
         font-size: 0.56rem;
         line-height: 0.84rem;
     }
 
-    #testimony{
+    #testimony {
         font-size: 0.25rem;
         line-height: 0.37rem;
     }
 
     /* ---partners--- */
-    #partners{
+    #partners {
         display: none;
     }
+
     /* ----footer section--- */
-    .third-section footer{
+    .third-section footer {
         border-radius: 0.5rem;
         padding: .5rem;
         width: 90%;
         margin: auto;
         margin-top: 1rem;
     }
-    #footer-item{
+
+    #footer-item {
         padding: 0 .5rem;
     }
-    .footer-text-header{
+
+    .footer-text-header {
         font-size: 0.3rem;
         line-height: 0.46rem;
     }
-    .footer-text{
+
+    .footer-text {
         font-size: 0.3rem;
         line-height: 0.46rem;
     }
-    .newsletter{
-        font-size: 0.25rem ;
+
+    .newsletter {
+        font-size: 0.25rem;
         margin-bottom: .2rem;
-       
+
     }
-    footer hr{
+
+    footer hr {
         margin-bottom: auto;
         color: grey;
     }
-    footer .form-control{
+
+    footer .form-control {
         padding: 0.25rem;
     }
-    footer .form-control::placeholder{
+
+    footer .form-control::placeholder {
         font-size: 0.25rem;
     }
-    footer .form-control:focus{
+
+    footer .form-control:focus {
         box-shadow: none;
     }
-    #newsletter-input{
+
+    #newsletter-input {
         height: 16px;
     }
-    #go{
+
+    #go {
         font-size: 0.25rem;
         top: 30%;
     }
-    /*     
-
-
-
-
-
-
-
-
-
-#newsletter-input{
-    position: relative;
-    width: 272px;
 }
 
-#go{
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #00000045;
-    position: absolute; 
-    top:10%;
-    right: 10%;
-} */
-
-    /* ----footer section ends--- */
-/* -----testimonial section ends ------ */
-}
-
-
-@media only screen and (max-width: 399px) {
-
-}
-
-/* --------- media queries ends -------- */
