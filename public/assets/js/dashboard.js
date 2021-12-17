@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var sidebar = document.getElementById('side-bar');
 var sidebarToggle = document.getElementById('sidebar-toggle');
 var nav = document.getElementById('nav-items');
@@ -64,3 +66,5 @@ if (screen.width <= 480){
     });         
     
 }
+
+})
