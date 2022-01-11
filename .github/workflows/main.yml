@@ -1,0 +1,23 @@
+name: Production
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    steps:
+        - uses: actions/checkout@v2
+        - name: Deploy
+          uses: reggionick/s3-deploy@v3
+          with:
+            folder: dist
+            bucket: production-giftpal-web
+            bucket-region: us-east-1
+            dist-id: E2D0R6KR6X0UMM
+            invalidation: /
+            delete-removed: true
+            no-cache: true
+            private: true

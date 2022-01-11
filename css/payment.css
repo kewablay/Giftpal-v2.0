@@ -1,0 +1,267 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#E5E5E5 !important;
+}
+
+.main-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ---selected gift--- */
+
+#back-button{
+    border-radius:13px;
+    background: #36E1B8;
+    margin-right: 1rem;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+.selected-gift{
+    display:flex;
+}
+.selected-gift .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.desc{
+    width: 22.7rem;
+}
+.desc h4{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.desc p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.btn-group{
+    background: #36E1B852;
+    border-radius: 50px;
+    width: 14.7rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.btn-group a{
+    text-decoration: none;
+    color: #5D43A7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.price{
+    padding: 1rem 1.4rem;
+    background: #36E1B8;
+    border-radius: 50px;
+}
+
+.get-it{
+    padding: 1rem 1.4rem;
+}
+
+/* -----end of selected gift----  */
+
+
+
+/* ----payment section ---- */
+#main-card{
+    background: #36E1B80F !important;
+}
+#main-card{
+    padding: 4rem 2rem;
+    /* height:659px; */
+    border-radius: 13px !important;
+    color: #A6A8AB;
+}
+
+.form-group{
+    margin-bottom:1rem;
+}
+
+.input-grp{
+    display: flex;
+}
+#name{
+    margin-right: .3rem;
+}
+
+.form-group label{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card input{
+    padding: 0 1rem;
+    height: 2.25rem;
+    font-size: 11px;
+    font-weight: 300;
+    /* width: 9.8rem; */
+    border-radius: 6px;
+}
+.card input::placeholder, textarea::placeholder{
+    color: #00000044 !important;
+    font-size: 11px !important;
+    font-weight: 300 !important;
+    letter-spacing: 0em;
+    text-align: left;
+}
+textarea{
+    resize: none !important; 
+    font-size: 11px !important;
+    height: 86px !important;
+}
+
+.sign-up{
+    margin-top: 2rem;
+}
+
+#google-link{
+    text-decoration: none; 
+    color: #00000078;
+    font-weight: 400;
+    font-size: 15px;
+}
+#google-link span{
+    margin-left: .5rem;
+}
+/* --summary section-- */
+.summary{
+    color: #00000080;
+}
+
+.summary .summary-card{
+    height: 90%;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.summary h3{
+font-size: 15px;
+font-weight: 400;
+}
+
+.summary h4{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.summary p{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.card-item{
+    width:100%;
+    padding: .2rem;
+    border-radius: 4px;
+    text-justify: center;
+}
+
+.card-item:nth-child(3){
+    background: #36E1B814;
+    margin-bottom: 1rem;
+}
+.card-item:nth-child(4){
+    background: #C9E13614;
+}
+button{
+    background: #36E1B8 !important;
+}
+.summary-card a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+.card-item span{
+    float: right;
+}
+
+.other-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+/* ----media queries ---- */
+@media (min-width: 1199.98px) { 
+    #main-card{
+        height:659px;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .selected-gift{
+        justify-content: center;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #back-button{
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+    .title{
+        margin-top: 1rem;
+    }
+    .btn-group{
+        width: 100%;
+    }
+    .price{
+        padding: 1rem 15%;
+    }
+    .sign-up{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #back-button{
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+
+    .selected-gift{
+        width: 70%;
+    }
+}
